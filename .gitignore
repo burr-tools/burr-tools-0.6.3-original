@@ -1,0 +1,9 @@
+**/.deps
+**/.dirstamp
+**/Makefile
+config.log
+config.status
+doxygen.cfg
+src/config.h
+src/stamp-h1
+src/help/helpdata.cpp
