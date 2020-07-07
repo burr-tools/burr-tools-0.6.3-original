@@ -1,0 +1,29 @@
+
+AWS Cloud9 Configuration
+------------------------
+Name : burrtools
+Environment type : EC2
+Instance type : t2.micro
+IAM role : AWSServiceRoleForAWSCloud9 (generated)
+
+
+-------------------------
+sudo yum -y update
+sudo yum -y install gcc-c++ fltk fltk-devel boost boost-devel libpng libpng-devel libXmu-devel libXi-devel libXi libXmu
+git clone https://github.com/burr-tools/burr-tools-0.6.3-original.git
+cd burr-tools-0.6.3-original/
+./configure --without-boost-test-exec-monitor
+
+--- Compiling burrTxt2 ---
+cd src
+make burrTxt2
+cd ..
+
+--- Testing burrTxt2 ---
+src/burrTxt2 -R -d examples/CubeInCage.xmpuzzle 
+ls -al examples
+
+-------------------------
+-rw-rw-r-- 1 ec2-user ec2-user  6487 Jul  7 01:44 SolidSixPieceBurrs.xmpuzzle
+-rw-rw-r-- 1 ec2-user ec2-user 25176 Jul  7 01:49 SolidSixPieceBurrs.xmpuzzlettt
+-------------------------

@@ -1,0 +1,16 @@
+**/.deps
+**/.dirstamp
+**/Makefile
+config.log
+config.status
+doxygen.cfg
+src/config.h
+src/stamp-h1
+src/help/helpdata.cpp
+**/*.o
+**/*.a
+src/burrTxt
+src/burrTxt2
+src/gui/burrGui
+src/help/helpviewer
+src/unitTest
